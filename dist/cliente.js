@@ -77,9 +77,15 @@ var Cliente = (exports["default"] = /*#__PURE__*/ (function () {
       },
     },
     {
+      key: "impuesto",
+      get: function get() {
+        return this._impuesto;
+      },
+    },
+    {
       key: "calcularImpuesto",
       value: function calcularImpuesto() {
-        var objetoImpuesto = this._impuesto;
+        var objetoImpuesto = this.impuesto;
         if (objetoImpuesto) {
           var montoBrutoAnual = objetoImpuesto.montoBrutoAnual;
           var deducciones = objetoImpuesto.deducciones;

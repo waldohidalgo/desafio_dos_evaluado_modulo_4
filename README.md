@@ -25,3 +25,9 @@ Por último, he utilizado **Babel** con el preset **@babel/preset-env** para tra
 ![Settings Babel](./img/setting_babel_config.png)
 
 Debido a que el código generado por Babel es considerablemente más largo no muestro capturas de pantalla. Sin embargo, dicho código se encuentra en la carpeta **dist** de este repositorio como he mencionado anteriormente.
+
+El comando para ejecutar la generación de los nuevos archivos utilizando babel es el siguiente:
+
+```
+npx babel src/ -d dist/ --config-file ./babel.config.json
+```

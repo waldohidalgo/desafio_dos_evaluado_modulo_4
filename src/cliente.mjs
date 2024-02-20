@@ -11,8 +11,12 @@ export default class Cliente {
     this._nombre = nuevo_nombre;
   }
 
+  get impuesto() {
+    return this._impuesto;
+  }
+
   calcularImpuesto() {
-    const objetoImpuesto = this._impuesto;
+    const objetoImpuesto = this.impuesto;
     if (objetoImpuesto) {
       const montoBrutoAnual = objetoImpuesto.montoBrutoAnual;
       const deducciones = objetoImpuesto.deducciones;
